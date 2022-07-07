@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-size: auto;
+  background: hsl(225, 100%, 94%);
+}
+
+/* Main Styles Section */
+
+.container {
+  margin: 80px auto;
+  width: 375px;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 15px;
+}
+
+.hero-img {
+  border-radius: 15px 15px 0 0;
+  width: 375px;
+}
+
+h1,
+.description {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 30px;
+}
+
+.description {
+  color: hsl(224, 23%, 55%);
+  line-height: 24px;
+  margin: 0 50px 30px 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Annual Plan Section */
+
+.annual-plan {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin: 0 28px 30px 28px;
+  background: #edf2ff;
+  padding: 16px 5px;
+  border-radius: 10px;
+}
+
+.annual {
+  color: #000;
+  font-weight: 900;
+}
+
+span {
+  margin-top: 10px;
+}
+
+.price {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.change {
+  margin-top: 12px;
+  font-weight: 900;
+  cursor: pointer;
+  color: hsl(245, 75%, 52%);
+}
+
+.change:focus,
+.change:hover {
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Proceed to Payment Section */
+
+.btn {
+  display: inline-block;
+  padding: 16px 86px;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(56, 41, 224, 0.4);
+}
+
+.btn:focus,
+.btn:hover {
+  color: #fff;
+  background-color: #9893e3;
+  font-weight: 700;
+}
+
+/* Cancel Order Section */
+
+.cancel {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 30px;
+}
+
+.cancel:focus,
+.cancel:hover {
+  color: 000;
+  font-weight: 700;
+}
+
+/* Footer Section */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 18px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 375px) {
+  .container,
+  .hero-img {
+    width: 300px;
+  }
+
+  .description {
+    margin: 0 28px 30px 28px;
+    line-height: 1.8;
+  }
+
+  .btn {
+    padding: 16px 40px;
+    font-size: 0.9em;
+  }
+}
